@@ -1,0 +1,17 @@
+chmod +x ampel.py 
+
+sudo apt-get install pyhton-pyaudio
+sudo apt-get install libasound-dev
+sudo apt-get install python3-pyaudio
+sudo apt-get install python3-numpy
+
+
+-> asound.conf nach /etc/asound.conf
+
+sudo apt-get install rpi.gpio
+
+cd /etc/systemd/system/
+
+sudo nano ampel.service
+sudo systemctl start ampel.service 
+sudo systemctl enable ampel.service 
